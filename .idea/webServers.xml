@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7df3bc9d-d6ac-4c0d-9215-e4dcefd0328a" name="Azure School WordPress" url="https://antoine-wordpress-maisonneuve.azurewebsites.net/">
+        <fileTransfer rootFolder="/site/wwwroot" accessType="FTPS" host="waws-prod-yt1-053.ftp.azurewebsites.windows.net" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
