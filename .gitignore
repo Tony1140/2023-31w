@@ -17,6 +17,10 @@
 /readme.html
 /wp-*.php
 /xmlrpc.php
+/nginx.conf
+/.maintenance
+/db.php
+/object-cache.php
 
 # Configuration
 wp-config.php
@@ -585,3 +589,5 @@ bh_unicode_properties.cache
 # https://packagecontrol.io/packages/sublime-github
 GitHub.sublime-settings
 
+/wp-content/db.php
+/wp-content/object-cache.php

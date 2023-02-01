@@ -1,0 +1,20 @@
+/*
+Theme Name: 31w Antoine Boutin
+Theme URI: https://github.com/Tony1140
+Author: Antoine Boutin
+Author URI:
+Description: Introduction à la création d'un thème Wordpress
+Version: 1.0
+Requires at least: 10.1.0.1
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 31w-antoine-boutin
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+    background-color: beige;
+}

@@ -1,5 +1,5 @@
 <?php exit; ?>{
-    "version": "2.2.7",
+    "version": "2.2.12",
     "cluster.messagebus.debug": false,
     "cluster.messagebus.enabled": false,
     "cluster.messagebus.sns.region": "",
@@ -950,5 +950,9 @@
     "imageservice.configuration_overloaded": true,
     "fragmentcache": {
         "engine": "redis"
+    },
+    "pgcache.bad_behavior_path": "",
+    "newrelic": {
+        "monitoring_type": "apm"
     }
 }
