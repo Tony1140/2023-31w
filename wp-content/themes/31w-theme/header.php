@@ -13,8 +13,6 @@
         $blogInfoUrl = filter_var($blogInfoUrl, FILTER_SANITIZE_URL);
         $blogInfoUrl = filter_SSL($blogInfoUrl);
     ?>
-    <h1><?php echo(filter_var(get_bloginfo("name"), FILTER_SANITIZE_FULL_SPECIAL_CHARS)); ?></h1>
-    <h2><?php echo(filter_var(get_bloginfo("description"), FILTER_SANITIZE_FULL_SPECIAL_CHARS)); ?></h2>
-    <h2><?php echo($blogInfoUrl); ?></h2>
     <h1><a href="<?php echo($blogInfoUrl); ?>"><?php echo(filter_var(get_bloginfo("name"), FILTER_SANITIZE_FULL_SPECIAL_CHARS)); ?></a></h1>
+    <h2><?php echo(filter_var(get_bloginfo("description"), FILTER_SANITIZE_FULL_SPECIAL_CHARS)); ?></h2>
 </header>

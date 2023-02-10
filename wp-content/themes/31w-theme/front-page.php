@@ -1,8 +1,16 @@
 <?php get_header(); ?>
 
 <main>
-    <h3>index.php</h3>
+    <code>
+        <?php
+            $fileName = $_SERVER["SCRIPT_FILENAME"];
+            $fileName = filter_var($fileName, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+            $fileName = basename($fileName, ".php");
 
+            echo($fileName);
+        ?>
+    </code>
+    <h3>index.php</h3>
     <?php
         while (have_posts())
         {
