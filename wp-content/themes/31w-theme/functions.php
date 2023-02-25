@@ -39,3 +39,15 @@ function enregistrement_des_menus(): void
 }
 
 add_action("after_setup_theme", "enregistrement_des_menus", 0);
+
+function cidweb_modifie_requete_principal(WP_Query $query): void
+{
+    if ($query->is_home() && $query->is_main_query() && !is_admin())
+    {
+        $query->set("category_name", "note_wp");
+        $query->set("orderby", "title");
+        $query->set("order", "ASC");
+    }
+}
+
+add_action("pre_get_posts", "cidweb_modifie_requete_principal");
