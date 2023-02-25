@@ -16,6 +16,8 @@
                 "container" => "nav"
             ]);
 
+            get_search_form();
+
             $blogInfoUrl = get_bloginfo("url");
             $blogInfoUrl = filter_var($blogInfoUrl, FILTER_SANITIZE_URL);
         ?>

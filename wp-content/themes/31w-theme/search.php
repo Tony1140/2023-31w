@@ -10,16 +10,15 @@
             echo($fileName);
         ?>
     </code>
-    <h3>index.php</h3>
-    <section class="blocflex">
+    <section class="recherche">
         <?php
             while (have_posts())
             {
                 the_post();
         ?>
         <article>
-            <h3><a href="<?php echo(filter_var(get_the_permalink(), FILTER_SANITIZE_URL)); ?>"><?php echo(filter_var(get_the_title(), FILTER_SANITIZE_FULL_SPECIAL_CHARS)); ?></a></h3>
-            <p><?php echo(filter_var(wp_trim_words(get_the_excerpt(), 4), FILTER_SANITIZE_FULL_SPECIAL_CHARS)); ?></p>
+            <h5><a href="<?php echo(filter_var(get_the_permalink(), FILTER_SANITIZE_URL)); ?>"><?php echo(filter_var(get_the_title(), FILTER_SANITIZE_FULL_SPECIAL_CHARS)); ?></a></h5>
+            <?php echo(filter_var(wp_trim_words(get_the_excerpt(), 4), FILTER_SANITIZE_FULL_SPECIAL_CHARS)); ?>
         </article>
         <?php } ?>
     </section>
