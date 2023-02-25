@@ -254,7 +254,13 @@ p {
 }
 
 .menu-entete-container {
-  flex: 1
+}
+
+.menusearch {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .menu-entete-container .menu {
