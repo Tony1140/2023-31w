@@ -9,6 +9,7 @@
 <body>
 <header>
     <?php
+        the_custom_logo();
         wp_nav_menu([
            "menu" => "entete",
             "container" => "nav"

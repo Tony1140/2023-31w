@@ -14,8 +14,6 @@ add_action("wp_enqueue_scripts", "ajouter_styles");
 
 add_theme_support("html5", [
     "search_form",
-    "comment_form",
-    "comment_list",
     "gallery",
     "caption"
 ]);
